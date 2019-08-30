@@ -1,0 +1,169 @@
+---
+LIMS2_LIVE:
+  schema_class: LIMS2::Model::Schema
+  dsn: 'dbi:Pg:host=htgt-lims-db;port=5446;dbname=lims2_live'
+  AutoCommit: 1
+  roles:
+    lims2:
+      user: lims2
+      password: team87
+    webapp:
+      user: lims2_webapp
+      password: hM1zLYrloSPe
+    tasks:
+      user: lims2
+      password: team87
+LIMS2_STAGING:
+  schema_class: LIMS2::Model::Schema
+  dsn: 'dbi:Pg:host=htgt-db;port=5440;dbname=lims2_staging'
+  AutoCommit: 1
+  roles:
+    lims2:
+      user: lims2
+      password: team87
+    webapp:
+      user: lims2_webapp
+      password: 9diAE89jwauX
+    tasks:
+      user: lims2
+      password: team87
+LIMS2_TEST:
+  schema_class: LIMS2::Model::Schema
+  dsn: 'dbi:Pg:host=htgt-lims-db;port=5445;dbname=lims2_test'
+  AutoCommit: 1
+  roles:
+    lims2:
+      user: lims2
+      password: team87
+    webapp:
+      user: lims2_webapp
+      password: team87
+    tasks:
+      user: lims2
+      password: team87
+    tests:
+      user: lims2_test
+      password: team87
+LIMS2_DEVEL:
+  schema_class: LIMS2::Model::Schema
+  dsn: 'dbi:Pg:host=htgt-lims-db;port=5445;dbname=lims2_devel'
+  AutoCommit: 1
+  roles:
+    lims2:
+      user: lims2
+      password: team87
+    webapp:
+      user: lims2_webapp
+      password: team87
+    tasks:
+      user: lims2
+      password: team87
+LIMS2_DEVEL_UNITTEST:
+  schema_class: LIMS2::Model::Schema
+  dsn: 'dbi:Pg:host=htgt-db;port=5441;dbname=lims2_unittest'
+  AutoCommit: 1
+  roles:
+    lims2:
+      user: lims2
+      password: team87
+    tests:
+      user: lims2_test
+      password: test_passwd
+LIMS2_GENERAL_GV3:
+  schema_class: LIMS2::Model::Schema
+  dsn: 'dbi:Pg:host=htgt-db;port=5441;dbname=lims2_general_gv3'
+  AutoCommit: 1
+  roles:
+    lims2:
+      user: lims2
+      password: team87
+    webapp:
+      user: lims2_webapp
+      password: team87 
+    webapp_ro:
+      user: lims2
+      password: team87 
+    tasks:
+      user: lims2
+      password: team87
+LIMS2_LOCAL_GV3:
+  schema_class: LIMS2::Model::Schema
+  dsn: 'dbi:Pg:host=htgt-db;port=5441;dbname=lims2_local_gv3'
+  AutoCommit: 1
+  roles:
+    lims2:
+      user: lims2
+      password: team87
+    webapp:
+      user: lims2_webapp
+      password: team87 
+    webapp_ro:
+      user: lims2
+      password: team87 
+    tasks:
+      user: lims2
+      password: team87
+LIMS2_LOCAL_AF11:
+  schema_class: LIMS2::Model::Schema
+  dsn: 'dbi:Pg:host=htgt-db;port=5441;dbname=lims2_local_af11'
+  AutoCommit: 1
+  roles:
+    lims2:
+      user: lims2
+      password: team87
+    webapp:
+      user: lims2_webapp
+      password: team87 
+    webapp_ro:
+      user: lims2
+      password: team87 
+    tasks:
+      user: lims2
+      password: team87
+LIMS2_TEST_GV3:
+  schema_class: LIMS2::Model::Schema
+  dsn: 'dbi:Pg:host=htgt-db;port=5441;dbname=lims2_test_gv3'
+  AutoCommit: 1
+  roles:
+    lims2:
+      user: lims2
+      password: team87
+    webapp:
+      user: lims2_webapp
+      password: team87 
+    webapp_ro:
+      user: lims2
+      password: team87 
+    tasks:
+      user: lims2
+      password: team87
+    tests:
+      user: lims2_webapp
+      password: team87
+    lims2_test_gv3_webapp:
+      user: lims2
+      password: team87
+    read:
+      user: lims2
+      password: team87
+    edit:
+      user: lims2
+      password: team87
+WGE:
+  schema_class: WGE::Model::Schema
+  dsn: 'dbi:Pg:host=htgt-db;port=5441;dbname=wge'
+  AutoCommit: 1
+  user: lims2
+  password: team87
+WGE_DEVEL:
+  schema_class: WGE::Model::Schema
+  dsn: 'dbi:Pg:host=htgt-db;port=5441;dbname=wge_devel'
+  AutoCommit: 1
+  user: wge
+  password: team87
+WGE_TEST:
+  schema_class: WGE::Model::Schema
+  dsn: 'dbi:Pg:host=htgt-db;port=5441;dbname=wge_test'
+  AutoCommit: 1
+  user: lims2
+  password: team87
